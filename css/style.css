@@ -438,31 +438,80 @@ h1 {
         left: -3%;
     }
 }
-/* From Uiverse.io by ArturCodeCraft */ 
-/* <reset-style> ============================ */
-a {
-    text-decoration: none;
-  }
-  /* <main-style> ============================ */
-  .menu__link {
-    color: #fff;
-    line-height: 2;
-    position: relative;
-  }
-  
-  .menu__link::before {
-    content: '';
-    width: 0;
-    height: 2px;
-    border-radius: 2px;
-    background-color: #fff;
-    position: absolute;
-    bottom: -.25rem;
-    left: 50%;
-    transition: width .4s, left .4s;
-  }
-  
-  .menu__link:hover::before {
-    width: 100%;
-    left: 0;
-  }
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 0 3%;
+    }
+
+    .navMenu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 10vh;
+        left: 0;
+        width: 100%;
+        background: white;
+        padding: 20px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .navMenu.active {
+        display: flex;
+    }
+
+    .navList {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .card {
+        width: 180px;
+        height: 250px;
+    }
+
+    .card-content h3 {
+        font-size: 1rem;
+    }
+
+    .card-content p {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 0 2%;
+    }
+
+    .navList li a {
+        font-size: 0.9rem;
+        padding: 8px 10px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .card {
+        width: 150px;
+        height: 200px;
+    }
+
+    .card-content h3 {
+        font-size: 0.9rem;
+    }
+
+    .card-content p {
+        font-size: 0.7rem;
+    }
+}
