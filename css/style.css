@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -11,6 +12,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     position: relative;
+    
 }
 
 .name {
@@ -18,7 +20,7 @@ body {
     letter-spacing: 5px;
     color: #333;
     margin-top: 10px;
-    margin-left: 15%;
+    margin-left: 15%; /* Adjusted margin to bring it closer to the left edge */
 }
 
 .navbar {
@@ -40,7 +42,7 @@ body {
 .navContainer {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    
     width: 100%;
 }
 
@@ -48,18 +50,19 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 10vw; /* Align nav items to the right */
 }
 
 .navList {
     list-style: none;
     display: flex;
-    gap: 20px; /* Add space between nav items */
+    gap: 10px; /* Reduced gap to bring items closer */
 }
 
 .navList li a {
     text-decoration: none;
     color: #333;
-    font-size: 1rem;
+    font-size: 1.2rem;
     padding: 10px 15px;
     transition: color 0.3s ease;
 }
@@ -93,6 +96,24 @@ label {
     background-color: #333;
     border-radius: 5px;
     transition: all 0.3s ease;
+}
+
+section #about {
+    padding: 50px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+section#about h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+section#about p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
 }
 
 /* Responsive Styles */
@@ -168,3 +189,12 @@ label {
     }
 }
 
+h1{
+    font-size: 2.5rem;
+    color: #333;
+    margin-top: 20px;
+    margin-left: 5%;
+}
+#about h1{
+    font-family: 'raleway', sans-serif;
+}
