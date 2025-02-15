@@ -49,7 +49,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 20vw; /* Align nav items to the right */
+    margin-left: 10vw; /* Align nav items to the right */
 }
 
 .navList {
