@@ -11,6 +11,7 @@ body {
     letter-spacing: 1px;
     margin: 0;
     padding: 0;
+    line-gap-override: 2px;
     box-sizing: border-box;
     position: relative;
 }
@@ -300,7 +301,7 @@ h1 {
     }
 .card{
     margin-top: -20vh !important;
-    margin-left: 0vw !important;
+    margin-left: -4vw !important;
 }
     .navMenu {
         display: none;
@@ -315,7 +316,9 @@ h1 {
     }
 #about{
 
-    margin-top:-2vh !important;
+    margin-top:-3vh !important;
+    margin-left:15px !important;
+    margin-right:1vw !important;
 }
     .navList {
         flex-direction: column;
@@ -357,6 +360,7 @@ h1 {
     .card {
         width: 150px;
         height: 150px;
+        
     }
 
     .logo {
@@ -454,6 +458,7 @@ h1 {
 }
 /* RESPONSIVE DESIGN */
 @media (max-width: 768px) {
+    
     .navbar {
         padding: 0 3%;
     }
