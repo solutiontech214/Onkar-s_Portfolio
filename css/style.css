@@ -458,7 +458,9 @@ h1 {
 }
 /* RESPONSIVE DESIGN */
 @media (max-width: 768px) {
-    
+    #about{
+        margin-right:2vw !important;
+    }
     .navbar {
         padding: 0 3%;
     }
