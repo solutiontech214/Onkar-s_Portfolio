@@ -140,6 +140,8 @@ h1 {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     transition: all 1s ease-in-out;
     border: 2px solid rgb(255, 255, 255);
+    margin-top:1vh;
+    margin-left: 1vw;
 }
 
 .background {
@@ -292,7 +294,10 @@ h1 {
         font-size: 1.8rem;
         margin-left: 5%;
     }
-
+.card{
+    margin-top: -150px;
+    margin-left: 0px;
+}
     .navMenu {
         display: none;
         flex-direction: column;
