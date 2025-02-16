@@ -75,14 +75,14 @@ body {
 }
 
 label {
-    background: linear-gradient(to right, #472137, #b52398) ; /* Gradient colors */
+    background: linear-gradient(to right, #703556, #b52398) ; /* Gradient colors */
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
 }
 
 .hamburger {
-    display: none;
+    display: flex; /* Ensure hamburger is visible */
     flex-direction: column;
     justify-content: space-around;
     width: auto;
@@ -338,7 +338,7 @@ h1 {
     }
 
     .hamburger {
-        display: flex;
+        display: flex; /* Ensure hamburger is visible in mobile view */
     }
 
     .hamburger.active .bar:nth-child(1) {
@@ -679,4 +679,3 @@ h1 {
     width: 0;
     height: 0;
   }
- 
