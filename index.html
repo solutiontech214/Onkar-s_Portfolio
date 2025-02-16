@@ -32,13 +32,14 @@
                           <div class="circle"></div>
                         </div>
                       </label></li>
-                    <li><button class="hamburger" aria-label="Toggle navigation">
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                    </button></li>
+                    
                 </ul>
             </div>
+            <button class="hamburger" aria-label="Toggle navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
         </div>
     </nav>
     
@@ -116,6 +117,9 @@ darkModeCheckbox.addEventListener('change', () => {
            
            
         });
+        if(size.width < 768){
+            document.querySelector('.hamberger').style.display = 'none';
+        }
     </script>
 </body>
 
