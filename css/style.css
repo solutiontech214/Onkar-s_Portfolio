@@ -27,7 +27,7 @@ body {
 .navbar {
     height: 10vh;
     width: 100%;
-    background-color: #fff; /* Add a background color to the navbar */
+    background-color: #ece4f0; /* Add a background color to the navbar */
     position: fixed; /* Fix the navbar at the top */
     top: 0; /* Position it at the top */
     left: 0; /* Position it at the left edge */
@@ -82,25 +82,28 @@ label {
 }
 
 .hamburger {
-    display: flex; /* Ensure hamburger is visible */
+    display: flex;
     flex-direction: column;
     justify-content: space-around;
-    width: auto;
+    width: 40px; /* Set a specific width */
     height: 30px;
     background: transparent;
     border: none;
     cursor: pointer;
     z-index: 1001;
-    margin-left: auto;
+    margin-left:1vw;
+    position: relative !important;
+  
 }
 
 .hamburger .bar {
-    width: 100%;
+    width: 40px; /* Match .hamburger width */
     height: 3px;
     background-color: #333;
     border-radius: 5px;
     transition: all 0.3s ease;
 }
+
 
 section #about {
     padding: 50px 20px;
