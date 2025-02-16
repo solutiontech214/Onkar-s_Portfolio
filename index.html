@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="dark">
     <nav class="navbar">
         <div class="navContainer">
             <div class="name"><label>Onkar</label> &nbsp;<label>Gutti</label></div>
@@ -30,6 +30,12 @@
                           <polyline points="8 1 12 5 8 9"></polyline>
                         </svg>
                       </button></a></li>
+                      <li><label class="ui-switch">
+                        <input type="checkbox" id="darkmode" />
+                        <div class="slider">
+                          <div class="circle"></div>
+                        </div>
+                      </label></li>
                     
                 </ul>
             </div>
@@ -76,7 +82,13 @@
                     excited to share my work with you.<br>Take a look around and feel free to reach out if you'd like to collaborate!
                 </p>
             </section>
+        </div>
+        </div>
         
+        
+    <br>
+    <br>
+    
     
 
   
@@ -85,11 +97,22 @@
     <script>
         const hamburger = document.querySelector('.hamburger');
         const navMenu = document.querySelector('.navMenu');
-      
-        
+        const darkModeCheckbox = document.getElementById('darkmode');
+
+darkModeCheckbox.addEventListener('change', () => {
+    if (darkModeCheckbox.checked) {
+        document.body.style.backgroundColor = 'black';
+        document.body.style.color = 'white';
+        document.querySelector('.navbar').style.backgroundColor = 'black';
+    } else {
+        document.body.style.backgroundColor = 'white';
+        document.body.style.color = 'black';
+    }
+});
         hamburger.addEventListener('click', () => {
             hamburger.classList.toggle('active');
             navMenu.classList.toggle('active');
+           
            
         });
     </script>
