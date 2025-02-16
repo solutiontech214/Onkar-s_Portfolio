@@ -93,6 +93,7 @@ label {
     z-index: 1001;
     margin-left:5vw;
     position: relative !important;
+    display: none;;
   
 }
 
