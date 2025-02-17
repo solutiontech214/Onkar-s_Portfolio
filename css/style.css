@@ -132,13 +132,13 @@ label {
 section #about {
     padding: 50px 20px;
     max-width: 800px;
-    margin: 0 auto;
+    margin: 1vh auto !important;
     text-align: center;
     font-family: "universe condensed light";
 }
 
 section#about h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin-bottom: 20px;
     font-family: "universe condensed light";
 }
