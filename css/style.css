@@ -48,10 +48,19 @@ body {
 }
 
 .navMenu {
-    display: flex;
-    justify-content: center;
+    display: flex; /* Display flex for desktop view */
+    flex-direction: row; /* Align items in a row */
     align-items: center;
-    margin-left: 10vw; /* Align nav items to the right */
+    width: auto; /* Adjust width as needed */
+    background-color: transparent; /* No background color for desktop view */
+    position: static; /* Static position for desktop view */
+    box-shadow: none; /* Remove shadow for desktop view */
+    height: auto; /* Adjust height as needed */
+    
+}
+
+.navMenu.active {
+    display: flex; /* Display when active */
 }
 
 .navList {
@@ -59,6 +68,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-left: 8vw;
     gap: 10px; /* Reduced gap to bring items closer */
 }
 
@@ -93,7 +103,7 @@ label {
     z-index: 1001;
     margin-left: 5vw;
     position: relative;
-    display: none;
+    display:none;
 }
 
 .hamburger .bar {
@@ -325,7 +335,7 @@ h1 {
     display: none;
 }
     .navMenu {
-        display: none;
+        display: none; /* Initially hidden */
         flex-direction: column;
         align-items: center;
         width: 100%;
@@ -334,7 +344,7 @@ h1 {
         top: 10vh;
         left: 0;
         box-shadow: 0 8px 16px rgba(11, 11, 11, 0.1);
-        height: 5vh !important;
+        height: auto; /* Adjust height as needed */
     }
 #about{
 
@@ -488,7 +498,7 @@ h1 {
     }
 
     .navMenu {
-        display: none;
+        display: none; /* Initially hidden */
         flex-direction: column;
         position: absolute;
         top: 10vh;
@@ -497,7 +507,7 @@ h1 {
         background: white;
         padding: 20px;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        height: 5vh !important;
+        height: auto; /* Adjust height as needed */
     }
     
 
