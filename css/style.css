@@ -332,8 +332,8 @@ font-size: large;
         margin-left: 5%;
     }
 .card{
-    margin-top: 3vh !important;
-    margin-left: 4vw !important;
+    margin-top: 2vh !important;
+    margin-left: 3vw !important;
 }
 .mobiletext{
     display: none;
@@ -550,6 +550,11 @@ font-size: large;
     .card-content p {
         font-size: 0.8rem;
     }
+    .card{
+        margin-top:2vh;
+        margin-left:3vw;
+    }
+
 }
 
 @media (max-width: 480px) {
@@ -579,6 +584,10 @@ font-size: large;
 
     .card-content p {
         font-size: 0.7rem;
+    }
+    .card{
+        margin-top:2vh;
+        margin-left:3vw;
     }
 }
 /* From Uiverse.io by alexmaracinaru */ 
