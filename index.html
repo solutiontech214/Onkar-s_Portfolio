@@ -35,7 +35,7 @@
                     
                 </ul>
             </div>
-            <button class="hamburger" aria-label="Toggle navigation">
+            <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -113,10 +113,10 @@ darkModeCheckbox.addEventListener('change', () => {
     }
 });
         hamburger.addEventListener('click', () => {
+            const isExpanded = hamburger.getAttribute('aria-expanded') === 'true';
             hamburger.classList.toggle('active');
             navMenu.classList.toggle('active');
-           
-           
+            hamburger.setAttribute('aria-expanded', !isExpanded);
         });
        
     </script>
