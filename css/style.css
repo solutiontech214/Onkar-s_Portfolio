@@ -343,6 +343,7 @@ h1 {
 
     .hamburger {
         display: flex; /* Ensure hamburger is visible in mobile view */
+        margin-left: 40vw !important; /* Adjusted margin to bring it closer to the left edge */
     }
 
     .hamburger.active .bar:nth-child(1) {
@@ -493,6 +494,8 @@ h1 {
 
     .hamburger {
         display: flex;
+        margin-left: 50vw !important; /* Adjusted margin to bring it closer to the left edge */
+
     }
 
     h1 {
