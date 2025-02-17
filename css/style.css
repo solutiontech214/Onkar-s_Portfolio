@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +6,7 @@
 }
 
 body {
-     font-family: "Noto Sans", serif;
+    font-family: "Open Sans", serif;
     letter-spacing: 1px;
     margin: 0;
     padding: 0;
@@ -19,9 +18,9 @@ body {
 .name {
     font-size: 2.3rem;
     letter-spacing: 5px;
-    color: #333;
+    color: gray;
     margin-top: 10px;
-    margin-left: 15%; /* Adjusted margin to bring it closer to the left edge */
+    margin-left: 10%; /* Adjusted margin to bring it closer to the left edge */
 }
 
 .navbar {
@@ -36,8 +35,9 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 0 20px; /* Add some padding for spacing */
-    box-shadow: 0 8px 16px rgba(11, 11, 11, 0.1); /* Add a shadow for better visibility */
-    border-bottom: 1px solid #333; /* Add a bottom border */
+    box-shadow: 2px 2px 16px rgba(11, 11, 11, 0.1); /* Add a shadow for better visibility */
+   /* Add a bottom border */
+    
 }
 
 .navContainer {
@@ -68,7 +68,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 8vw;
+    margin-left: 20vw;
     gap: 10px; /* Reduced gap to bring items closer */
 }
 
@@ -82,6 +82,10 @@ body {
 
 .navList li a:hover {
     color: #b52398; /* Change color on hover */
+}
+.gray{
+    color:gray;
+    font-weight: 600;
 }
 
 label {
@@ -135,32 +139,29 @@ section #about {
     max-width: 800px;
     margin: 0 auto;
     text-align: center;
-    font-family: "universe condensed light";
-}
+    font-family: "Open Sans", serif;}
 
 section#about h2 {
     font-size: 2rem;
     margin-bottom: 20px;
-    font-family: "universe condensed light";
-}
+    font-family: "Open Sans", serif;}
 
 section#about p {
     font-size: 1.1rem;
     line-height: 1.6;
     margin-bottom: 20px;
-    font-family: "universe condensed light";
-}
+    font-family: "Open Sans", serif;}
 
 h1 {
     font-size: 2.5rem;
-    color: #333;
+   
     margin-top: 20px;
     margin-left: 5%;
 }
 
+
 #about h1 {
-    font-family: 'Raleway', sans-serif;
-}
+    font-family: "Open Sans", serif;}
 
 /* From Uiverse.io by vinodjangid07 */
 .card {
@@ -172,9 +173,9 @@ h1 {
     overflow: hidden;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     transition: all 1s ease-in-out;
-    border: 2px solid rgb(255, 255, 255);
+    border: 2px solid rgb(228, 169, 217);
     margin-top:1vh;
-    margin-left: -10vw !important;
+    margin-left: -20vw !important;
 }
 
 .background {
@@ -306,7 +307,10 @@ h1 {
     left: -10%;
     transition-delay: 0.6s;
 }
-
+.text-gray-600
+{
+font-size: large;
+}
 .card:hover {
     transform: scale(1.1);
 }
@@ -496,6 +500,9 @@ h1 {
     .navbar {
         padding: 0 3%;
     }
+    .Btn{
+        background-color: white;
+    }
 
     .navMenu {
         display: none; /* Initially hidden */
@@ -549,7 +556,9 @@ h1 {
     .navbar {
         padding: 0 2%;
     }
-
+.Btn{
+    background-color: white;
+}
     .navList li a {
         font-size: 0.9rem;
         padding: 8px 10px;
@@ -598,8 +607,7 @@ h1 {
   
   .cta span {
     position: relative;
-    font-family: "Ubuntu", sans-serif;
-    font-size: 18px;
+    font-family: "Open Sans", serif;    font-size: 18px;
     font-weight: 700;
     letter-spacing: 0.05em;
     color: #234567;
@@ -715,3 +723,94 @@ h1 {
     width: 0;
     height: 0;
   }
+  /* From Uiverse.io by ZAKARIAE48CHELLE */ 
+.Btn {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    background-color: #ece4f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    transition-duration: 0.3s;
+    
+  }
+  
+  .svgIcon {
+    fill: #2196f3;
+  }
+  
+  .icon2 {
+    width: 18px;
+    height: 5px;
+    border-bottom: 2px solid #2196f3;
+    border-left: 2px solid #2196f3;
+    border-right: 2px solid #2196f3;
+  }
+  
+  .tooltip {
+    position: absolute;
+    right: -80px;
+    opacity: 0;
+    background-color: rgb(12, 12, 12);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 0.2s;
+    pointer-events: none;
+    letter-spacing: 0.5px;
+  }
+  
+  .tooltip::before {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: rgb(12, 12, 12);
+    background-size: 1000%;
+    background-position: center;
+    transform: rotate(45deg);
+    left: -5%;
+    transition-duration: 0.3s;
+  }
+  
+  .Btn:hover .tooltip {
+    opacity: 1;
+    transition-duration: 0.3s;
+  }
+  
+  .Btn:hover {
+    background-color:none;
+    transition-duration: 0.3s;
+  }
+  
+  .Btn:hover .icon2 {
+    border-bottom: 2px solid none;
+    border-left: 2px solid none;
+    border-right: 2px solid none;
+  }
+  
+  .Btn:hover .svgIcon {
+    fill: none;
+    animation: slide-in-top 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  }
+  
+  @keyframes slide-in-top {
+    0% {
+      transform: translateY(-10px);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+  
